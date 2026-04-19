@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import CardForm from "./components/CardForm";
+import CardPreview from "./components/CardPreview";
 
 function App() {
+  const [cardData, setCardData] = useState({
+    name: "",
+    title: "",
+    company: "",
+    phone: "",
+    email: "",
+    website: "",
+    address: "",
+  });
+
+  function handleChange(e) {
+    setCardData({ ...cardData, [e.target.name]: e.target.value });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-8 gap-6">
+      <h1 className="text-2xl font-semibold text-gray-800">
+        Business Card Generator
+      </h1>
+
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-4xl">
+        <div className="flex-1">
+          <CardForm cardData={cardData} onChange={handleChange} />
+        </div>
+
+        <div className="flex-1">
+          <CardPreview cardData={cardData} />
+        </div>
+      </div>
     </div>
   );
 }
