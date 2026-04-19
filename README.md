@@ -1,7 +1,7 @@
 # Business Card Generator
 
 A professional business card generator built with React and Tailwind CSS.
-Fill in your details and get a live preview that updates as you type — then download your card as a high-resolution PNG.
+Fill in your details and get a live preview that updates as you type, then download your card as a high-resolution PNG.
 
 ## Live Demo
 
