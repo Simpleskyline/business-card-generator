@@ -31,4 +31,4 @@ Fill in your details and get a live preview that updates as you type, then downl
 ## Part of My Learning Roadmap
 
 This is Phase 1 of a 6-phase project-based React and Flask learning journey built in public.
-Follow the journey on X: [@TranquilBuilds](https://x.com/TranquilBuilds)
+Follow the journey on X: [@TranquilBuilds]([https://x.com/TranquilBuilds](https://x.com/TranquilBuilds_))
